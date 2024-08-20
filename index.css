@@ -1,0 +1,48 @@
+/* Style the clock container */
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the clock face */
+.clock-face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* Style the hour, minute, and second hands */
+.hour-hand,.minute-hand,.second-hand {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 2px;
+    background-color: #333;
+    border-radius: 10px;
+    transform-origin: 100% 50%;
+}
+
+.hour-hand {
+    transform: rotate(0deg);
+}
+
+.minute-hand {
+    transform: rotate(0deg);
+}
+
+.second-hand {
+    transform: rotate(0deg);
+    background-color: #f00;
+}
